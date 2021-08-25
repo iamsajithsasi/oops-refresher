@@ -1,6 +1,7 @@
 ## Types
 
 Value: String, Number, Boolean, undefined, null
+
 Reference: Object, Function, Array
 
 ## 1. Object literals
@@ -57,7 +58,7 @@ function CircleConstructor(radius) {
 
   // disable someComplexFn from accessing Ex: circleAbs.someComplexFn();
   let someComplexFn = function (that) {
-    // this is undefine and no longer accessible here
+    // this is undefined in this scope and no longer accessible here
     console.log("some complex fn ", that.radius);
   };
   this.draw = function () {
